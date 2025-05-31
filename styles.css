@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Hero Section */
+.hero {
+    background: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Sections */
+section {
+    padding: 2.5rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.section-divider {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Call for Papers */
+.call-for-papers {
+    background: white;
+}
+
+.cfp-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cfp-topics ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cfp-topics li {
+    padding: 0.5rem 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.cfp-topics li::before {
+    content: '•';
+    color: #3b82f6;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+
+.date-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.date-item:last-child {
+    border-bottom: none;
+}
+
+.date-label {
+    font-weight: 500;
+    color: #666;
+}
+
+.date-value {
+    font-weight: 500;
+    color: #3b82f6;
+}
+
+
+/* Speakers */
+.speakers {
+    background: #f8f9fa;
+}
+
+/* Organizers */
+.organizers {
+    background: white;
+}
+
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.speaker-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-4px);
+}
+
+.speaker-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.speaker-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.speaker-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.speaker-affiliation {
+    color: #3b82f6;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.speaker-bio {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Overview */
+.overview {
+    background: #f8f9fa;
+}
+
+.overview-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.overview-content > p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.overview-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: left;
+}
+
+.overview-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.overview-section h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+}
+
+.overview-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Call for Papers */
+.cfp-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cfp-intro p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.cfp-submission-info {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.cfp-submission-info p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Schedule */
+.schedule {
+    background: white;
+}
+
+.schedule-table {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-item.highlight {
+    background: #f0f7ff;
+    margin: 0 -1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-time {
+    font-weight: 600;
+    color: #3b82f6;
+    min-width: 120px;
+}
+
+.schedule-event {
+    color: #333;
+    font-weight: 500;
+}
+
+.schedule-note {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.schedule-note p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.schedule-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.schedule-content p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header-title {
+        font-size: 2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    
+    .cfp-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .date-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 1.5rem 0;
+    }
+    
+    .cfp-guidelines {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.75rem;
+    }
+    
+    .header-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .speaker-card {
+        padding: 1.5rem;
+    }
+    
+    .speaker-avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+
